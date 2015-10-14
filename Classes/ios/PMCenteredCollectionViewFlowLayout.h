@@ -29,6 +29,9 @@
 @interface PMCenteredCollectionViewFlowLayout : UICollectionViewFlowLayout
 
 @property (nonatomic) BOOL centeringDisabled;
-@property (nonatomic, readonly) PMCenteredCircularCollectionView *collectionView;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wincompatible-property-type"
+@property (nullable, nonatomic, readonly) PMCenteredCircularCollectionView *collectionView;
+#pragma clang diagnostic pop
 
 @end
